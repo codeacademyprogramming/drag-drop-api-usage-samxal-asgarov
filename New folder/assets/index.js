@@ -45,18 +45,24 @@ function show(){
             let fileUrl = filereader.result;
             console.log(fileUrl)
             let imgTag = `<img src="${fileUrl}" alt="">`;
-            drag.innerHTML = imgTag;
+            drop.innerHTML = imgTag;
             
 
      let btn=document.createElement('button');       
     btn.innerHTML='delete'
     document.body.append(btn);
-     btn.style='position:absolute;width:100px; top:450px;left:1050px;border:1px  solid #ddd;-moz-box-shadow: 0px 0px 8px  #fff;';
+     btn.style='position:absolute;width:100px; top:450px;left:1210px;border:1px  solid #ddd;-moz-box-shadow: 0px 0px 8px  #fff;';
      btn.onclick=()=>{
          const close=document.getElementsByTagName('button');
          for(let i=0;i<close.length;i++){
-            
-          close[i].parentElement.style.display='none';
+            if(confirm("silmeynize eminsiz?")){
+                drop.children[0].remove();
+            btn.remove();
+            }
+            else{
+                return;
+            }
+         
          }
      }
         }
