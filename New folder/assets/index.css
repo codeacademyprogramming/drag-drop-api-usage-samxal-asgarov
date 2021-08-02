@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+  
+
+}
+
+
+.container{
+    text-align: center;
+    margin-top: 14%;
+
+}
+.header h1{
+   margin-right: 16%;
+}
+.area{
+    border:3px dotted black;
+    width: 500px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.borderin{
+    text-align: center;
+    margin-top: 30%;
+ 
+}
+
+.activearea.active{
+    border: 10px solid red;
+    position: absolute;
+  
+}
+img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    position:relative;
+    
+    left: 70%;
+}
+
+
+button{
+    background-color: rgb(78, 78, 248);
+    color: white;
+    width: 400px;
+    height: 30px;
+    border-radius: 4%;
+    font-size: 20px;
+}
+.droparea{
+    border: 4px solid none;
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    right: 1%;
+    top: 33%;
+}
+
